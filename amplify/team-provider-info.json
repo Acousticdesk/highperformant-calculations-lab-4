@@ -10,6 +10,11 @@
       "StackName": "amplify-lab4-dev-150042",
       "StackId": "arn:aws:cloudformation:eu-west-3:603824207380:stack/amplify-lab4-dev-150042/b18d4040-5c40-11ed-877b-0af9f56a3dd8",
       "AmplifyAppId": "d8g8mbvzpeuqv"
+    },
+    "categories": {
+      "auth": {
+        "lab42ea9516f": {}
+      }
     }
   }
 }

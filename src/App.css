@@ -39,3 +39,16 @@
 .read-the-docs {
   color: #888;
 }
+
+.sign-in {
+  margin: 16px 0 0;
+}
+
+.sign-in--google {
+  display: inline-flex;
+  align-items: center;
+}
+
+.sign-in--google img {
+  margin: 0 24px 0 0;
+}
