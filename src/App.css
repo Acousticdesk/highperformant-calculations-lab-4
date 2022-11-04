@@ -52,3 +52,13 @@
 .sign-in--google img {
   margin: 0 24px 0 0;
 }
+
+.user-preview {
+  width: 640px;
+  height: 480px;
+  overflow: auto;
+}
+
+pre {
+  text-align: left;
+}
