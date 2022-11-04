@@ -4,11 +4,13 @@ import { useEffect, useState } from 'react';
 
 import reactLogo from './assets/react.svg'
 import './App.css'
+import { Toast } from './Toast';
 
 function App() {
   const [currentUser, setCurrentUser] = useState();
+  const [shouldShowToast, setShouldShowToast] = useState(false);
   useEffect(() => {
-    Auth.currentAuthenticatedUser().then(setCurrentUser)
+    Auth.currentAuthenticatedUser().then(setCurrentUser).catch(setShouldShowToast.bind(null, true))
   }, []);
   return (
     <div className="App">
@@ -54,6 +56,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      {shouldShowToast && <Toast message="Please, sign in to see the user details" />}
     </div>
   )
 }

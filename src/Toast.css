@@ -1,0 +1,15 @@
+.toast {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    cursor: pointer;
+    padding: 8px 16px;
+    background: #17a2b8;
+    color: #ffffff;
+    transition: opacity 0.35s;
+    opacity: 0;
+}
+
+.toast.show {
+    opacity: 1;
+}
